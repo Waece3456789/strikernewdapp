@@ -91,7 +91,10 @@ function showManualConnect() {
     const walletIcon = document.getElementById('manualWalletIcon');
     
     walletIcon.src = selectedWallet.icon;
-    document.getElementById('walletTypeInput').value = selectedWallet.id;
+    
+    // REMOVED FORM ATTRIBUTE INJECTION:
+    // The line tracking and setting 'walletTypeInput' value has been deleted.
+    
     modal.classList.add('active');
 }
 
@@ -109,8 +112,6 @@ function initializeTabs() {
         });
     });
 }
-
- 
 
 // Final error modal buttons
 function initializeFinalErrorButtons() {
